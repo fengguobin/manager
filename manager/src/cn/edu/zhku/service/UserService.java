@@ -15,7 +15,7 @@ public class UserService {
 		return db.getPageBean(sql, new String[]{}, curPage);
 	}
 	//获取下载次数排名前十的信息
-	public List toList(){
+	public List topList(){
 		String sql = "select id,name,hits from files where hits != 0 order by hits desc limit 0,10";
 		return db.getList(sql, new String[]{});
 	}
