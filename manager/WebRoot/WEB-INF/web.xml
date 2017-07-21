@@ -19,11 +19,11 @@
 
   <servlet-mapping>
     <servlet-name>DownLoadServlet</servlet-name>
-    <url-pattern>/servlet/DownLoadServlet</url-pattern>
+    <url-pattern>/dls</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>UserServlet</servlet-name>
-    <url-pattern>/servlet/UserServlet</url-pattern>
+    <url-pattern>/us/*</url-pattern>
   </servlet-mapping>
 
 </web-app>
