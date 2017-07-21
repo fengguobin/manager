@@ -38,9 +38,9 @@ public class DBUtil {
 	//构造方法，定义驱动程序连接用户名和密码信息
     public DBUtil(){
 	  driver="com.mysql.jdbc.Driver";
-	  url="jdbc:mysql://localhost:3306/ch14";
+	  url="jdbc:mysql://localhost:3306/test";
 	  username="root";
-	  password="root";
+	  password="123456";
     }
 	// 获取连接对象
 	private Connection getConnection() {
