@@ -24,7 +24,7 @@ import org.apache.tomcat.util.http.fileupload.RequestContext;
 import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 
-public class FileUitl {
+public class FileUtil {
 	//存储表单信息
 	private Map parameters = null;
 	//存储上传文件信息
@@ -32,7 +32,7 @@ public class FileUitl {
 	//最大上传文件大小
 	private long max_size = 30 * 1024 * 1024;
 	
-	public FileUitl(){
+	public FileUtil(){
 		parameters = new HashMap();
 		file = new HashMap();
 	}
@@ -140,7 +140,7 @@ public class FileUitl {
 	public Map getFile(){
 		return file;
 	}
-	public Map getParameter(){
+	public Map getParameters(){
 		return parameters;
 	}
 	public void setMax_size(long max_size){

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import sun.net.www.content.audio.wav;
 import cn.edu.zhku.service.CommonService;
-import cn.edu.zhku.util.FileUitl;
+import cn.edu.zhku.util.FileUtil;
 
 public class DownLoadServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -35,7 +35,7 @@ public class DownLoadServlet extends HttpServlet {
 		//得到下载文件的信息，map对象，封装另外filepath和filename的信息
 		Map file = cs.getDownLoadFile(id);
 		//实现文件下载动作
-		FileUitl fu = new FileUitl();
+		FileUtil fu = new FileUtil();
 		int r = fu.download(this.getServletContext(), response, file);
 		//更新下载次数
 		if (r == 1) {
