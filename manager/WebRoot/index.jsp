@@ -1,3 +1,3 @@
 <script>
-	location.replace("${pageContext.request.contextPath}/us.ListAll.jsp");
+	location.replace("${pageContext.request.contextPath}/us/listAll");
 </script>
