@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import cn.edu.zhku.service.AdminService;
 import cn.edu.zhku.util.FileUtil;
+import cn.edu.zhku.util.PageBean;
 
 public class AdminServlet extends HttpServlet {
 
